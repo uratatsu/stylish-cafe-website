@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 25% 98%;
+    --foreground: 20 24% 12%;
+    
+    --card: 30 25% 98%;
+    --card-foreground: 20 24% 12%;
+    
+    --popover: 30 25% 98%;
+    --popover-foreground: 20 24% 12%;
+    
+    --primary: 25 43% 33%;
+    --primary-foreground: 30 25% 98%;
+    
+    --secondary: 35 47% 75%;
+    --secondary-foreground: 20 24% 12%;
+    
+    --muted: 30 10% 92%;
+    --muted-foreground: 20 10% 40%;
+    
+    --accent: 35 47% 70%;
+    --accent-foreground: 20 24% 12%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 30 25% 98%;
+    
+    --border: 20 10% 85%;
+    --input: 20 10% 85%;
+    --ring: 25 43% 33%;
+    
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 20 24% 12%;
+    --foreground: 30 25% 98%;
+    
+    --card: 20 24% 12%;
+    --card-foreground: 30 25% 98%;
+    
+    --popover: 20 24% 12%;
+    --popover-foreground: 30 25% 98%;
+    
+    --primary: 25 43% 33%;
+    --primary-foreground: 30 25% 98%;
+    
+    --secondary: 35 47% 60%;
+    --secondary-foreground: 20 24% 12%;
+    
+    --muted: 20 20% 20%;
+    --muted-foreground: 30 10% 70%;
+    
+    --accent: 35 47% 55%;
+    --accent-foreground: 20 24% 12%;
+    
+    --destructive: 0 74% 50%;
+    --destructive-foreground: 30 25% 98%;
+    
+    --border: 20 20% 25%;
+    --input: 20 20% 25%;
+    --ring: 25 43% 33%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  p, span, a, li, button {
+    @apply font-sans;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
