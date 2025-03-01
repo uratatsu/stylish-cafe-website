@@ -1,0 +1,51 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6F4E37" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#32292F" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feBlend mode="overlay" in="SourceGraphic" result="turbulence"/>
+    </filter>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)"/>
+  
+  <!-- Noise overlay -->
+  <rect width="1920" height="1080" fill="#ffffff" fill-opacity="0.05" filter="url(#noise)"/>
+  
+  <!-- Abstract coffee cup shape -->
+  <path d="M 960 340 
+           C 860 340, 780 400, 780 480
+           C 780 640, 920 700, 960 700
+           C 1000 700, 1140 640, 1140 480
+           C 1140 400, 1060 340, 960 340
+           Z" 
+        fill="none" stroke="#F5F5DC" stroke-width="8" stroke-opacity="0.3"/>
+  
+  <!-- Steam from coffee -->
+  <path d="M 900 320 
+           C 920 290, 940 310, 940 280
+           C 940 250, 920 270, 940 240
+           C 960 210, 980 230, 980 200" 
+        fill="none" stroke="#F5F5DC" stroke-width="4" stroke-opacity="0.4" stroke-linecap="round"/>
+  
+  <path d="M 960 320 
+           C 980 290, 1000 310, 1000 280
+           C 1000 250, 980 270, 1000 240
+           C 1020 210, 1040 230, 1040 200" 
+        fill="none" stroke="#F5F5DC" stroke-width="4" stroke-opacity="0.4" stroke-linecap="round"/>
+  
+  <!-- Coffee beans scattered -->
+  <ellipse cx="700" cy="600" rx="15" ry="25" transform="rotate(30 700 600)" fill="#D4B483" fill-opacity="0.6"/>
+  <ellipse cx="750" cy="680" rx="15" ry="25" transform="rotate(-20 750 680)" fill="#D4B483" fill-opacity="0.6"/>
+  <ellipse cx="1200" cy="580" rx="15" ry="25" transform="rotate(45 1200 580)" fill="#D4B483" fill-opacity="0.6"/>
+  <ellipse cx="1150" cy="650" rx="15" ry="25" transform="rotate(-30 1150 650)" fill="#D4B483" fill-opacity="0.6"/>
+  
+  <!-- Simple café name with tagline -->
+  <text x="960" y="800" font-family="serif" font-size="84" text-anchor="middle" fill="#F5F5DC" fill-opacity="0.9">Café Serene</text>
+  <text x="960" y="860" font-family="sans-serif" font-size="32" text-anchor="middle" fill="#F5F5DC" fill-opacity="0.7">A Stylish Urban Retreat</text>
+</svg>
