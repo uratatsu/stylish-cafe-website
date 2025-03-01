@@ -1,71 +1,73 @@
-# Café Serene Website
+# カフェ・セレーネ ウェブサイト
 
-A modern and stylish café website built with Next.js, React, and Tailwind CSS.
+> 🤖 **注意**: このプロジェクトはClaude Desktopにて「おしゃれなカフェのHPを作って、GitHubにファイルを展開して」というプロンプトで自動的に作成されました。設定ファイルとして[@https://github.com/kinopeee/windsurfrules/blob/main/v5-ja/.windsurfrules](https://github.com/kinopeee/windsurfrules/blob/main/v5-ja/.windsurfrules)を使用しています。
 
-## Overview
+Next.js、React、Tailwind CSSで構築された、モダンでスタイリッシュなカフェのウェブサイトです。
 
-This project is a fully responsive website for a fictional café named "Café Serene." The site features a clean, elegant design that showcases the café's offerings and creates a welcoming online presence.
+## 概要
 
-## Features
+このプロジェクトは架空のカフェ「カフェ・セレーネ」のために作られた、完全にレスポンシブなウェブサイトです。サイトは清潔で洗練されたデザインを特徴とし、カフェの魅力を紹介し、温かみのあるオンラインプレゼンスを作り出します。
 
-- **Responsive Design**: Looks great on mobile, tablet, and desktop devices
-- **Modern UI**: Uses Tailwind CSS for styling with a custom color palette
-- **Interactive Elements**: Includes interactive components like image gallery and menu filters
-- **Performance Optimized**: Built with Next.js for optimal performance and SEO
+## 特徴
 
-## Pages
+- **レスポンシブデザイン**: モバイル、タブレット、デスクトップデバイスで美しく表示
+- **モダンなUI**: カスタムカラーパレットによるTailwind CSSスタイリング
+- **インタラクティブな要素**: 画像ギャラリーやメニューフィルターなどのインタラクティブなコンポーネントを含む
+- **パフォーマンス最適化**: Next.jsによる最適なパフォーマンスとSEO
 
-- **Home**: An inviting landing page showcasing the café's ambiance and key features
-- **Menu**: Interactive menu with category filters and detailed dish information
-- **About**: Story and information about the café, its values, and team
-- **Gallery**: Visual showcase with category filtering and lightbox view
-- **Contact**: Contact information and form for inquiries and reservations
+## ページ構成
 
-## Tech Stack
+- **ホーム**: カフェの雰囲気と主な特徴を紹介する魅力的なランディングページ
+- **メニュー**: カテゴリフィルターと詳細な料理情報を備えたインタラクティブなメニュー
+- **アバウト**: カフェのストーリー、価値観、チームに関する情報
+- **ギャラリー**: カテゴリでフィルタリングできるビジュアルショーケースとライトボックス表示
+- **コンタクト**: お問い合わせや予約のための連絡先情報とフォーム
 
-- **Framework**: Next.js 15.1.3
+## 技術スタック
+
+- **フレームワーク**: Next.js 15.1.3
 - **UI**: React 19.0.0
-- **Styling**: Tailwind CSS 3.4.17 with custom theme
-- **Components**: Custom UI components with shadcn/ui 2.1.8
-- **Icons**: Lucide React for consistent iconography
-- **TypeScript**: Type-safe code with TypeScript 5.0.0
+- **スタイリング**: カスタムテーマによるTailwind CSS 3.4.17
+- **コンポーネント**: shadcn/ui 2.1.8によるカスタムUIコンポーネント
+- **アイコン**: 一貫したアイコンのためのLucide React
+- **TypeScript**: TypeScript 5.0.0による型安全なコード
 
-## Local Development
+## ローカル開発
 
-1. Clone the repository:
+1. リポジトリをクローン:
 ```bash
 git clone https://github.com/uratatsu/stylish-cafe-website.git
 cd stylish-cafe-website
 ```
 
-2. Install dependencies:
+2. 依存関係をインストール:
 ```bash
 npm install
 ```
 
-3. Run the development server:
+3. 開発サーバーを起動:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+4. ブラウザで[http://localhost:3000](http://localhost:3000)を開いて結果を確認。
 
-## Project Structure
+## プロジェクト構造
 
-- `app/`: Main application code
-  - `components/`: Reusable UI components
-    - `ui/`: Basic UI elements
-    - `layout/`: Layout components like Header and Footer
-  - `lib/`: Utilities and helper functions
-  - `globals.css`: Global styles and Tailwind configuration
-  - `layout.tsx`: Root layout with common elements
-  - `page.tsx`: Homepage component
-- `public/`: Static assets like images
+- `app/`: メインアプリケーションコード
+  - `components/`: 再利用可能なUIコンポーネント
+    - `ui/`: 基本的なUI要素
+    - `layout/`: ヘッダーやフッターなどのレイアウトコンポーネント
+  - `lib/`: ユーティリティと補助関数
+  - `globals.css`: グローバルスタイルとTailwind設定
+  - `layout.tsx`: 共通要素を持つルートレイアウト
+  - `page.tsx`: ホームページコンポーネント
+- `public/`: 画像などの静的アセット
 
-## License
+## ライセンス
 
-This project is available as open source under the terms of the MIT License.
+このプロジェクトはMITライセンスのもとでオープンソースとして提供されています。
 
 ---
 
-Designed and built with ☕ by uratatsu © 2025
+☕ uratatsu によるデザインと実装 © 2025
